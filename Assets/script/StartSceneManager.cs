@@ -6,6 +6,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class StartSceneManager : HelpTools
 {
@@ -13,6 +14,9 @@ public class StartSceneManager : HelpTools
 
     public Button _ShowInfoCloseBtn;
     public Button _ShowInfoBtn;
+
+    public Button _btnNewGame;
+    public Button _btnReStartGame;
     #endregion
 
     #region Mono
@@ -23,6 +27,19 @@ public class StartSceneManager : HelpTools
         
         _ShowInfoCloseBtn.onClick.AddListener(OnClickClose);
         _ShowInfoBtn.onClick.AddListener(OnClickShowInfo);
+
+        _btnNewGame.onClick.AddListener(OnClickNewGameBtn);
+        _btnReStartGame.onClick.AddListener(OnClickReStartBtn);
+    }
+
+    private void OnClickReStartBtn()
+    {
+        
+    }
+
+    private void OnClickNewGameBtn()
+    {
+        SceneManager.LoadScene("MainScene");
     }
 
     private void OnClickShowInfo()

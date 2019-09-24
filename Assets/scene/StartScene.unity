@@ -1311,6 +1311,8 @@ MonoBehaviour:
   child: []
   _ShowInfoCloseBtn: {fileID: 1842803590}
   _ShowInfoBtn: {fileID: 378026411}
+  _btnNewGame: {fileID: 1455165953}
+  _btnReStartGame: {fileID: 861917896}
 --- !u!1 &1918517733
 GameObject:
   m_ObjectHideFlags: 0
